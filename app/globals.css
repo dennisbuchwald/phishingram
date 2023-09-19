@@ -1,12 +1,12 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
 
   --primary-glow: conic-gradient(
@@ -87,12 +87,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-start-rgb));
 }
 
 a {
@@ -104,4 +99,31 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+/* Zusätzliche Stile für dunkle Schriftfarben */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  color: #333333; /* Dunkelgrau */
+}
+
+a {
+  color: #000000; /* Schwarz */
+}
+
+.reset-password-box {
+  border: 1px solid #dbdbdb; /* Dunkelgrauer Rand */
+  border-radius: 3px;
+  padding: 16px; /* Innenabstand */
+  margin: 60px auto 0;
+  background-color: #ffffff; /* Weißer Hintergrund */
+  color: #333333; /* Dunkelgraue Schrift */
+  max-width: 388px;
 }
